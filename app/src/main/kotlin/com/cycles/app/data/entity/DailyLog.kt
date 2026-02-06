@@ -2,10 +2,14 @@ package com.cycles.app.data.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 import java.time.LocalDate
 
-@Entity(tableName = "daily_logs")
+@Entity(
+    tableName = "daily_logs",
+    indices = [Index(value = ["date"], unique = true)],
+)
 data class DailyLog(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,

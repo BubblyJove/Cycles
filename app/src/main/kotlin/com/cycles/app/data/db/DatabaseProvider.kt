@@ -28,6 +28,7 @@ object DatabaseProvider {
             "cycles_encrypted.db",
         )
             .openHelperFactory(factory)
+            .addMigrations(CyclesDatabase.MIGRATION_1_2)
             .build()
     }
 

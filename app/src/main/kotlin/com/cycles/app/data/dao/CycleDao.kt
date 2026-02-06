@@ -13,6 +13,15 @@ interface CycleDao {
     @Query("SELECT * FROM cycles ORDER BY start_date DESC")
     fun getAllCycles(): Flow<List<Cycle>>
 
+    @Query("SELECT * FROM cycles ORDER BY start_date DESC")
+    suspend fun getAllCyclesOnce(): List<Cycle>
+
+    @Query("SELECT * FROM cycles WHERE cycle_length IS NOT NULL ORDER BY start_date DESC")
+    suspend fun getCompletedCycles(): List<Cycle>
+
+    @Query("SELECT * FROM cycles WHERE cycle_length IS NULL ORDER BY start_date DESC LIMIT 1")
+    suspend fun getOpenCycle(): Cycle?
+
     @Query("SELECT * FROM cycles ORDER BY start_date DESC LIMIT 1")
     fun getLatestCycle(): Flow<Cycle?>
 
