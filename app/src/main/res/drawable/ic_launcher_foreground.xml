@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Circular background -->
+    <path
+        android:fillColor="#C48B9F"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+    <!-- Crescent moon shape representing cycles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26c-15.46,0 -28,12.54 -28,28s12.54,28 28,28c4.14,0 8.07,-0.9 11.6,-2.52c-5.17,-4.6 -8.43,-11.28 -8.43,-18.71c0,-7.43 3.26,-14.11 8.43,-18.71C62.07,26.9 58.14,26 54,26z" />
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cycles_primary">#C48B9F</color>
+    <color name="cycles_on_primary">#FFFFFF</color>
+    <color name="cycles_primary_container">#F5D6E0</color>
+    <color name="cycles_secondary">#8B7A9E</color>
+    <color name="cycles_background">#FFFBFE</color>
+    <color name="cycles_surface">#FFFBFE</color>
+
+    <color name="cycles_primary_dark">#E8ADBF</color>
+    <color name="cycles_on_primary_dark">#3E1929</color>
+    <color name="cycles_background_dark">#1C1B1F</color>
+    <color name="cycles_surface_dark">#1C1B1F</color>
+</resources>
